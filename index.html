@@ -1,23 +1,42 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-<head>
-  <title>A simple form</title>
-</head>
-<body>
-  <form>
-    <!-- Code example of some standard fields in form -->
-    <input type="text" name="firstName" placeholder="First name">
-    
-    <input type="text" name="lastName" placeholder="Last name">
-    
-    <input type="text" name="username" placeholder="Username">
-    
-    <!-- Code example of a password field in form -->
-    <input type="password" name="password" placeholder="Password">
-    
 
-    <!-- Code example of a submit button in form -->
-    <input type="submit" value="Submit">
-  </form>
+<head>
+    <title>HTML Login Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <h1>GeeksforGeeks</h1>
+        <h3>Enter your login credentials</h3>
+
+        <form action="">
+            <label for="first">
+                Username:
+            </label>
+            <input type="text" id="first" name="first" 
+                placeholder="Enter your Username" required>
+
+            <label for="password">
+                Password:
+            </label>
+            <input type="password" id="password" name="password" 
+                placeholder="Enter your Password" required>
+
+            <div class="wrap">
+                <button type="submit">
+                    Submit
+                </button>
+            </div>
+        </form>
+        
+        <p>Not registered?
+            <a href="#" style="text-decoration: none;">
+                Create an account
+            </a>
+        </p>
+    </div>
 </body>
+
 </html>
